@@ -8,16 +8,16 @@
         </div>
         <div class="col-9 pt-5 pr-5">
             <div>
-                <h1>static_username</h1>
+                <h1>{{ $user->username }}</h1>
             </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>6</strong> posts</div>
                 <div class="pr-5"><strong>66</strong> followers</div>
                 <div class="pr-5"><strong>666</strong> folling</div>
             </div>
-            <div class="pt-4 font-weight-bold">Static Name Test</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, eum provident? Atque, culpa dolorum eligendi esse in ipsam iure nesciunt nisi perspiciatis qui.</div>
-            <div><a href="#">www.staticsite.com</a></div>
+            <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->description }}</div>
+            <div><a href="{{ $user->profile->url }}">{{ $user->profile->url }}</a></div>
         </div>
     </div>
     <div class="row pt-5">
