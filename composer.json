@@ -63,7 +63,8 @@
         "post-install-cmd": [
             "@php -r \"file_exists('.env') || copy('.env.dev', '.env');\"",
             "@php artisan key:generate --ansi",
-            "@php artisan storage:link"
+            "@php artisan storage:link",
+            "@php artisan migrate --seed"
         ]
     }
 }
