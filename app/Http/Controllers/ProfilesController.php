@@ -22,6 +22,10 @@ class ProfilesController extends Controller
             return $user->posts->count();
         });
 
+        $followersCount = Cache::remember('count.followers.' . $user->id, now()->addSeconds(30), function () use ($user) {
+            return $user->profile->followers->count();
+        });
+
     }
 
     public function edit(User $user)
