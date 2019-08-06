@@ -24,8 +24,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+        if (!in_array(config('app.env'), ['production', 'local']))
+            $schedule->command('migrate:fresh --seed')
+                ->everyThirtyMinutes();
     }
 
     /**
