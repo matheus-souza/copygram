@@ -2,6 +2,15 @@
 
 Copygram as the name suggests is a copy of Instagram developed with Laravel, Bootstrap, VueJS and PostgreSQL. It aims to put into practice acquired knowledge.
 
+## Access to [demo app]()
+### Credentials
+
+E-mail: default@mail.com
+
+Password: qwe123qwe
+
+**Obs.**: *All data is reset in thirty minutes.*
+
 ## Running the project
 ### Requirements
 - [Git](https://git-scm.com/)
