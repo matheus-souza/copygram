@@ -65,7 +65,7 @@
             "@php artisan key:generate --ansi",
             "@php artisan storage:link",
             "ln -sr storage/app/public public/storage",
-            "@php artisan migrate --seed"
+            "@php artisan migrate"
         ]
     }
 }
