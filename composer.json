@@ -64,6 +64,7 @@
             "@php -r \"file_exists('.env') || copy('.env.dev', '.env');\"",
             "@php artisan key:generate --ansi",
             "@php artisan storage:link",
+            "ln -sr storage/app/public public/storage",
             "@php artisan migrate --seed"
         ]
     }
